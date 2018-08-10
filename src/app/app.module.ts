@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { FormioGrid } from 'angular-formio/grid';
 import { LandingPageComponent } from './views/landing-page/landing-page.component';
 import { FormulariosComponent } from './formularios/formularios.component';
+import { FormulariosViewComponent } from './views/formularios-view/formularios-view.component';
+import { FormularioLabinComponent } from './formularios/formulario-labin/formulario-labin.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormulariosComponent } from './formularios/formularios.component';
     NavigationComponent,
     LandingPageComponent,
     HomeComponent,
-    FormulariosComponent
+    FormulariosComponent,
+    FormulariosViewComponent,
+    FormularioLabinComponent
   ],
   imports: [
     FormioGrid,

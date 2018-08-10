@@ -6,6 +6,8 @@ import { FormioAuthService, FormioAuthConfig } from 'angular-formio/auth';
 import { AuthConfig, AppConfig } from '../config';
 import { AuthModule } from './auth/auth.module';
 import {AuthGuard} from './auth/auth.guard';
+import { FormulariosComponent } from './formularios/formularios.component';
+import { FormularioLabinComponent } from './formularios/formulario-labin/formulario-labin.component';
 
 
 const routes: Routes = [
@@ -21,7 +23,15 @@ const routes: Routes = [
   {
     path: 'auth',
     loadChildren: () => AuthModule
-  }
+  },
+  {
+    path: 'formularios',
+    component: FormulariosComponent, canActivate: [AuthGuard]
+  },
+  {
+    path: 'formularios/formulario-labin',
+    component: FormularioLabinComponent, canActivate: [AuthGuard]
+  },
 ];
 
 @NgModule({

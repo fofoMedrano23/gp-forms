@@ -1,0 +1,50 @@
+<div class="col-md-12">
+
+    <!--Projects section v.2-->
+    <section class="section text-center pb-3">
+
+        <!--Section heading-->
+        <!-- <h2 class="section-heading h1 pt-4"><strong>Latest projects:</strong></h2> -->
+        <!--Section description-->
+
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+
+            <!--Grid column-->
+            <div class="col-lg-6 col-xl-5 mb-3">
+
+                <!--Card-->
+                <div class="card card-cascade narrower d-flex mb-5">
+
+
+
+                    <!--Card content-->
+                    <h4 class="card-title">Login</h4>
+                <!--Text-->
+                <p class="card-text">Puede ingresar con su correo y contraseña</p>
+                    <div class="card-body">
+                        <div *ngIf="!auth.authenticated">
+                            <formio [src]="service.loginForm" (submit)="service.onLoginSubmit($event); onSubmit($event)"></formio>
+                          </div>
+                    </div>
+
+                    <!--Card footer-->
+                    <div class="card-footer links-light">
+                        <div *ngIf="auth.authenticated">
+                            <p>Ya se ha autentificado - Volver a <a routerLink="/">Inicio</a> </p>
+                          </div>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </section>
+    <!--/Projects section v.2-->
+</div>
+

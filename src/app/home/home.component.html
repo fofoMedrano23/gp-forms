@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="well text-center" *ngIf="auth.authenticated">
+    <h3 *ngIf="auth.user.data">You are logged in as <strong>{{ auth.user.data.email }}</strong>!</h3>
+  </div>
+</div>
+
+
+<body *ngIf="!auth.authenticated">
+  <app-landing-page></app-landing-page>
+      </body>

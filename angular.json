@@ -30,10 +30,13 @@
               "node_modules/font-awesome/scss/font-awesome.scss",
               "node_modules/bootstrap/scss/bootstrap.scss",
              "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
+             "node_modules/ng-uikit-pro-standard/assets/scss/mdb.scss",
               "src/styles.scss"
             ],
             "scripts": ["node_modules/chart.js/dist/Chart.js",
-                        "node_modules/hammerjs/hammer.min.js"]
+                        "node_modules/hammerjs/hammer.min.js",
+                        "node_modules/easy-pie-chart/dist/easypiechart.js",
+                        "node_modules/screenfull/dist/screenfull.js"]
           },
           "configurations": {
             "production": {

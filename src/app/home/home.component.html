@@ -1,8 +1,59 @@
-<div class="container">
-  <div class="well text-center" *ngIf="auth.authenticated">
-    <h3 *ngIf="auth.user.data">You are logged in as <strong>{{ auth.user.data.email }}</strong>!</h3>
+<div class="container" *ngIf="auth.authenticated">
+    <div class="row">
+        <div class="col-md-4 pb-5 pt-5 text-center" >
+            <h3 *ngIf="auth.user.data">Bienvenido <strong>{{ auth.user.data.email }}</strong>!</h3>
+
+        </div>
+     </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Ultimos Pacientes</h3>
+        <formio-grid src="https://kdpuoiceesabwco.form.io/paciente"></formio-grid>
+       <button type="button" class="btn btn-primary">Gestionar Pacientes</button>
+    </div>
+    </div>
   </div>
-</div>
+
+
+<!-- <div *ngIf="auth.authenticated" >
+<div class="row">
+    <div class="col-md-12 well text-center" >
+        <h3 *ngIf="auth.user.data">Bienvenido <strong>{{ auth.user.data.email }}</strong>!</h3>
+
+    </div>
+ </div>
+
+
+  <div class="d-flex p-2 flex-row justify-content-around" >
+      <div class="d-flex">
+        <div>
+            <h3>Ultimos Pacientes</h3>
+            <formio-grid src="https://kdpuoiceesabwco.form.io/paciente"></formio-grid>
+            <button type="button" class="btn btn-primary">Gestionar Pacientes</button>
+          </div>
+      </div>
+
+      <div class="d-flex">
+          <div>
+              <h3>Ultimos Pacientes</h3>
+              <formio-grid src="https://kdpuoiceesabwco.form.io/paciente"></formio-grid>
+              <button type="button" class="btn btn-primary">Gestionar Pacientes</button>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div>
+                <h3>Ultimos Pacientes</h3>
+                <formio-grid src="https://kdpuoiceesabwco.form.io/paciente"></formio-grid>
+                <button type="button" class="btn btn-primary">Gestionar Pacientes</button>
+              </div>
+          </div>
+  </div>
+
+</div> -->
+
+
 
 
 <body *ngIf="!auth.authenticated">

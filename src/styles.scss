@@ -3,3 +3,12 @@
 .card-header-tabs{
   display: none;
 }
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+  position: absolute;
+  opacity: 1;
+  pointer-events: fill;
+}
+
+.nav-tabs{
+  background-color:#c5cae9;
+}

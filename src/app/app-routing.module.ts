@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import {AuthGuard} from './auth/auth.guard';
 import { FormulariosComponent } from './formularios/formularios.component';
 import { FormularioLabinComponent } from './formularios/formulario-labin/formulario-labin.component';
+import {PacienteModule} from './paciente/paciente.module';
 
 
 const routes: Routes = [
@@ -31,6 +32,9 @@ const routes: Routes = [
   {
     path: 'formularios/formulario-labin',
     component: FormularioLabinComponent, canActivate: [AuthGuard]
+  }, {
+    path: 'paciente',
+    loadChildren: () => PacienteModule, canActivate: [AuthGuard]
   },
 ];
 

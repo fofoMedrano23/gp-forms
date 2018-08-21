@@ -1,35 +1,45 @@
-
-
-<!-- Section: Testimonials v.1 -->
-<section class="text-center my-5">
+<!-- Section: Team v.2 -->
+<section class="team-section text-center my-5">
 
   <!-- Section heading -->
   <h2 class="h1-responsive font-weight-bold my-5">Pacientes</h2>
   <!-- Section description -->
-  <p class="dark-grey-text w-responsive mx-auto mb-5">Aquí puede ver la información del paciente</p>
+  <p class="grey-text w-responsive mx-auto mb-5">En esta sección puede ver los datos, editar o borrar los datos de sus pacientes </p>
 
   <!-- Grid row -->
-  <div class="row">
+  <div class="row text-center">
 
-    <!--Grid column-->
-    <div class="col-lg-12 col-md-6 mb-md-0 mb-4">
-      <!--Card-->
-      <div class="card testimonial-card">
-        <!--Background color-->
-        <div class="card-up blue-gradient">
-        </div>
 
-        <div class="card-body">
-          <!--Name-->
-          <h4 class="font-weight-bold mb-4">{{ service.resource?.data.nombre | uppercase }} {{ service.resource?.data.primerApellido | uppercase}}</h4>
-          <hr>
-        </div>
+      <!-- Grid column -->
+      <div class="col-md-12 mb-md-0 mb-5">
+          <div class="avatar mx-auto">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+          </div>
+          <h4 class=" dark-grey-text my-4">Nombre: {{ service.resource?.data.nombre | uppercase }} {{ service.resource?.data.primerApellido | uppercase}} {{ service.resource?.data.segundoApellido | uppercase}}</h4>
+          <h4 class=" dark-grey-text my-4">Nombre: {{ service.resource?.data.nombre | uppercase }} {{ service.resource?.data.primerApellido | uppercase}}</h4>
+
+          <h6 class="text-uppercase grey-text mb-3">
+              <strong>Front-end Developer</strong>
+          </h6>
+          <!--Email-->
+          <a type="button" mdbBtn floating="true" size="sm" class="mx-1 mb-0 btn-email">
+              <i class="fa fa-envelope"></i>
+          </a>
+          <!-- Facebook-->
+          <a type="button" mdbBtn floating="true" size="sm" class="mx-1 mb-0 btn-fb">
+              <i class="fa fa-facebook"></i>
+          </a>
+          <!-- GitHub-->
+          <a type="button" mdbBtn floating="true" size="sm" class="mx-1 mb-0 btn-git">
+              <i class="fa fa-github"></i>
+          </a>
       </div>
-      <!--Card-->
-    </div>
-    <!--Grid column-->
+      <!-- Grid column -->
+
+
+
   </div>
   <!-- Grid row -->
 
 </section>
-<!-- Section: Testimonials v.1 -->
+<!-- Section: Team v.2 -->

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-formulario-labin',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioLabinComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
+  constructor(public router: Router, public route: ActivatedRoute) {
+    }
 
-}
+    ngOnInit() {
+    }
+
+    onSubmit(submission: any) {
+          this.router.navigate(['../'], {
+            relativeTo: this.route
+          });
+        }
+    }
+
+
+
+
+
+

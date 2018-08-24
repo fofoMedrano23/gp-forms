@@ -10,6 +10,9 @@
           <li class="nav-item " routerLinkActive="paciente" *ngIf="auth.is.medico">
             <a class="nav-link" routerLink="paciente">Pacientes</a>
           </li>
+          <li class="nav-item" routerLinkActive="reportes" *ngIf="auth.is.medico">
+            <a class="nav-link" routerLink="reportes">Reportes</a>
+          </li>
       </ul>
       <ul class="nav navbar-nav ml-auto">
         <li class="nav-item" routerLinkActive="active" *ngIf="!auth.authenticated">

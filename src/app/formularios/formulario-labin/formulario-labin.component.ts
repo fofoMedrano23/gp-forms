@@ -16,7 +16,7 @@ export class FormularioLabinComponent implements OnInit {
     }
 
     onSubmit(submission: any) {
-          this.router.navigate(['../'], {
+          this.router.navigate(['../../reportes/reporte-labin'], {
             relativeTo: this.route
           });
         }

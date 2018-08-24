@@ -2,9 +2,9 @@
 <section class="team-section text-center my-5">
 
   <!-- Section heading -->
-  <h2 class="h1-responsive font-weight-bold my-5">Pacientes</h2>
+  <h2 class="h1-responsive font-weight-normal my-5">Perfil de Paciente</h2>
   <!-- Section description -->
-  <p class="grey-text w-responsive mx-auto mb-5">En esta sección puede ver los datos, editar o borrar los datos de sus pacientes </p>
+  <p class="grey-text w-responsive mx-auto mb-5">En esta sección puede gestionar los datos de sus pacientes </p>
 
   <!-- Grid row -->
   <div class="row text-center">
@@ -15,24 +15,12 @@
           <div class="avatar mx-auto">
               <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
           </div>
-          <h4 class=" dark-grey-text my-4">Nombre: {{ service.resource?.data.nombre | uppercase }} {{ service.resource?.data.primerApellido | uppercase}} {{ service.resource?.data.segundoApellido | uppercase}}</h4>
-          <h4 class=" dark-grey-text my-4">Nombre: {{ service.resource?.data.nombre | uppercase }} {{ service.resource?.data.primerApellido | uppercase}}</h4>
+          <h4 class=" dark-grey-text my-4 text-center ">Nombre: {{ service.resource?.data.nombre}} {{ service.resource?.data.primerApellido | uppercase}} {{ service.resource?.data.segundoApellido | uppercase}}</h4>
+          <h4 class=" dark-grey-text my-4 text-center">Correo Electrónico:{{ service.resource?.data.correoElectrnico}}</h4>
+          <h4 class=" dark-grey-text my-4 text-center">Telefono:{{ service.resource?.data.telefono}}</h4>
+          <h4 class=" dark-grey-text my-4 text-center">Sexo:{{ service.resource?.data.wellSexo}}</h4>
+          <h4 class=" dark-grey-text my-4 text-center">Direccion:{{ service.resource?.data.direccion}}</h4>
 
-          <h6 class="text-uppercase grey-text mb-3">
-              <strong>Front-end Developer</strong>
-          </h6>
-          <!--Email-->
-          <a type="button" mdbBtn floating="true" size="sm" class="mx-1 mb-0 btn-email">
-              <i class="fa fa-envelope"></i>
-          </a>
-          <!-- Facebook-->
-          <a type="button" mdbBtn floating="true" size="sm" class="mx-1 mb-0 btn-fb">
-              <i class="fa fa-facebook"></i>
-          </a>
-          <!-- GitHub-->
-          <a type="button" mdbBtn floating="true" size="sm" class="mx-1 mb-0 btn-git">
-              <i class="fa fa-github"></i>
-          </a>
       </div>
       <!-- Grid column -->
 
@@ -43,3 +31,4 @@
 
 </section>
 <!-- Section: Team v.2 -->
+

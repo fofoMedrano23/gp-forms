@@ -11,12 +11,17 @@ import { PacienteResourceComponent } from './paciente-resource/paciente-resource
 import { PacienteViewComponent } from './paciente-view/paciente-view.component';
 import { PacienteCreateComponent } from './paciente-create/paciente-create.component';
 import { FormioModule } from 'angular-formio';
-
+import { PacienteEditComponent } from './paciente-edit/paciente-edit.component';
+import { PacienteComponent } from './paciente/paciente.component';
+import { FormioGrid } from 'angular-formio/grid';
+import { WavesModule, ButtonsModule } from 'ng-uikit-pro-standard';
 /*inject the participant routes*/
 const pacienteResourceRoutes: Routes = FormioResourceRoutes({
   view: PacienteViewComponent,
   resource: PacienteResourceComponent,
-  create: PacienteCreateComponent
+  create: PacienteCreateComponent,
+  edit: PacienteEditComponent,
+  index: PacienteComponent
 });
 
 @NgModule({
@@ -24,9 +29,13 @@ const pacienteResourceRoutes: Routes = FormioResourceRoutes({
     CommonModule,
     FormioResource,
     RouterModule.forChild(pacienteResourceRoutes),
-    FormioModule
+    FormioModule,
+    FormioGrid,
+    WavesModule,
+    ButtonsModule
+
   ],
-  declarations: [PacienteResourceComponent, PacienteViewComponent, PacienteCreateComponent],
+  declarations: [PacienteResourceComponent, PacienteViewComponent, PacienteCreateComponent, PacienteEditComponent, PacienteComponent],
   providers: [
     FormioResourceService,
     {provide: FormioResourceConfig, useValue: {

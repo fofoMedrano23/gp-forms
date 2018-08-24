@@ -1,0 +1,7 @@
+
+<form class=" border border-light p-5">
+    <div class="patient-edit-banner">
+      <p class="patient-edit-heading h1 mb-4 pb-3 pt-2 text-center">Gestión de Pacientes &nbsp;<span class="fa fa-edit fa-2x" aria-hidden="true"></span></p>
+    </div>
+    <formio [form]="service.form" [submission]="service.resource" [refresh]="service.refresh" [hideComponents]="config.parents" (submit)="onSubmit($event)"></formio>
+  </form>

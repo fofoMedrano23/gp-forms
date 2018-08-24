@@ -15,7 +15,7 @@ export class LoginComponent extends FormioAuthLoginComponent implements OnInit {
 
 
   onSubmit(event) {
-    this.router.navigate(['']);
+    this.router.navigate(['/']);
   }
   ngOnInit() {
   }

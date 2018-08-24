@@ -1,0 +1,19 @@
+<h3 *ngIf="service.form" style="margin-top:0;">
+  <a routerLink="../" class="back-button">
+    <i class="fa fa-chevron-left glyphicon glyphicon-chevron-left"></i>
+  </a> | Nuevo {{ service.form.title }}
+</h3>
+<!-- <formio [form]="service.form" [submission]="service.resource" [refresh]="service.refresh" [hideComponents]="config.parents" [error]="onError" [success]="onSuccess"(submit)="onSubmit($event)"></formio> -->
+
+<!-- Default form subscription -->
+<form class=" border border-light p-5">
+  <div class="patient-create-banner">
+    <p class="patient-create-heading h1 mb-4 pb-3 pt-2 text-center">Crear Paciente &nbsp;<span class="fa fa-user-md fa-2x" aria-hidden="true"></span></p>
+  </div>
+
+    <formio [form]="service.form" [submission]="service.resource" [refresh]="service.refresh" [hideComponents]="config.parents" [error]="onError" [success]="onSuccess"(submit)="onSubmit($event)"></formio>
+
+
+
+</form>
+<!-- Default form subscription -->

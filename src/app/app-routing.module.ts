@@ -9,6 +9,8 @@ import {AuthGuard} from './auth/auth.guard';
 import { FormulariosComponent } from './formularios/formularios.component';
 import { FormularioLabinComponent } from './formularios/formulario-labin/formulario-labin.component';
 import {PacienteModule} from './paciente/paciente.module';
+import { ReportesComponent } from './reportes/reportes.component';
+import { ReporteLabinComponent } from './reportes/reporte-labin/reporte-labin.component';
 
 
 const routes: Routes = [
@@ -35,6 +37,13 @@ const routes: Routes = [
   }, {
     path: 'paciente',
     loadChildren: () => PacienteModule, canActivate: [AuthGuard]
+  }, {
+    path: 'reportes',
+    component: ReportesComponent, canActivate: [AuthGuard]
+  },
+  {
+    path: 'reportes/reporte-labin',
+    component: ReporteLabinComponent, canActivate: [AuthGuard]
   },
 ];
 

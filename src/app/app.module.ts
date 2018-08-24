@@ -13,6 +13,9 @@ import { FormulariosViewComponent } from './views/formularios-view/formularios-v
 import { FormularioLabinComponent } from './formularios/formulario-labin/formulario-labin.component';
 import { MDBBootstrapModulesPro } from 'ng-uikit-pro-standard';
 import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
+import { ReportesComponent } from './reportes/reportes.component';
+import { SeccionReportesComponent } from './reportes/seccion-reportes/seccion-reportes.component';
+import { ReporteLabinComponent } from './reportes/reporte-labin/reporte-labin.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
     HomeComponent,
     FormulariosComponent,
     FormulariosViewComponent,
-    FormularioLabinComponent
+    FormularioLabinComponent,
+    ReportesComponent,
+    SeccionReportesComponent,
+    ReporteLabinComponent
   ],
   imports: [
     FormioGrid,

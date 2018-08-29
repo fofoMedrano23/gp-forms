@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormioAuthService, FormioAuthLoginComponent } from 'angular-formio/auth';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -13,7 +12,7 @@ export class LoginComponent extends FormioAuthLoginComponent implements OnInit {
     super(auth);
    }
 
-
+// navigate to home page after login
   onSubmit(event) {
     this.router.navigate(['/']);
   }

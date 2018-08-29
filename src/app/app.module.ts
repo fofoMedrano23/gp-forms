@@ -11,8 +11,7 @@ import { LandingPageComponent } from './views/landing-page/landing-page.componen
 import { FormulariosComponent } from './formularios/formularios.component';
 import { FormulariosViewComponent } from './views/formularios-view/formularios-view.component';
 import { FormularioLabinComponent } from './formularios/formulario-labin/formulario-labin.component';
-import { MDBBootstrapModulesPro } from 'ng-uikit-pro-standard';
-import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
+import { MDBBootstrapModulesPro, MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 import { ReportesComponent } from './reportes/reportes.component';
 import { SeccionReportesComponent } from './reportes/seccion-reportes/seccion-reportes.component';
 import { ReporteLabinComponent } from './reportes/reporte-labin/reporte-labin.component';

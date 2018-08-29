@@ -19,14 +19,16 @@
                 <!--Text-->
                 <p class="card-text">Puede ingresar con su correo y contraseña</p>
                     <div class="card-body">
+                      <form> <!--if user is is not authenticated show login form -->
                         <div *ngIf="!auth.authenticated">
                             <formio [src]="service.loginForm" (submit)="service.onLoginSubmit($event); onSubmit($event)"></formio>
                           </div>
+                        </form>
                     </div>
 
                     <!--Card footer-->
                     <div class="card-footer links-light">
-                        <div *ngIf="auth.authenticated">
+                        <div *ngIf="auth.authenticated"><!--if user is is already authenticated show go back link -->
                             <p>Ya se ha autentificado - Volver a <a routerLink="/">Inicio</a> </p>
                           </div>
                     </div>
@@ -43,4 +45,3 @@
     </section>
     <!--/Projects section v.2-->
 </div>
-

@@ -4,7 +4,7 @@
       <p class="patient-banner-heading h1 mb-4 pb-3 pt-2 text-center">Lista de Pacientes &nbsp;<span class="fa fa-list-alt fa-2x" aria-hidden="true"></span></p>
     </div>
 
-    <formio-grid class="patient-formio" [src]="gridSrc" [query]="gridQuery" [onForm]="service.formLoaded" (select)="onSelect($event)" (error)="service.onError($event)"></formio-grid>
+    <formio-grid style= "cursor: pointer;" [src]="gridSrc" [query]="gridQuery" [onForm]="service.formLoaded" (select)="onSelect($event)" (error)="service.onError($event)"></formio-grid>
     <button mdbBtn type="button" color="indigo" class="waves-light" mdbWavesEffect *ngIf="service.form" routerLink="new"><span class="glyphicon glyphicon-plus"></span> Nuevo {{ service.form.title }}</button>
 
   </form>

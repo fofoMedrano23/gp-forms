@@ -14,7 +14,7 @@ import { FormioModule } from 'angular-formio';
 import { PacienteEditComponent } from './paciente-edit/paciente-edit.component';
 import { PacienteComponent } from './paciente/paciente.component';
 import { FormioGrid } from 'angular-formio/grid';
-import { WavesModule, ButtonsModule } from 'ng-uikit-pro-standard';
+import { WavesModule, ButtonsModule} from 'ng-uikit-pro-standard';
 /*inject the participant routes*/
 const pacienteResourceRoutes: Routes = FormioResourceRoutes({
   view: PacienteViewComponent,

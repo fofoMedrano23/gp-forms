@@ -1,17 +1,17 @@
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+<mdb-navbar SideClass="navbar navbar-expand-md navbar-collapse navbar-dark indigo">
   <mdb-navbar-brand>
       <a class="navbar-brand" routerLink="home" href="#">Gp-forms</a>
   </mdb-navbar-brand>
   <links>
       <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-              <a class="nav-link waves-light" routerLink="formularios" *ngIf="auth.is.medico" mdbWavesEffect>Formularios</a>
+              <a  *ngIf="auth.is.medico" class="nav-link waves-light" routerLink="formularios" mdbWavesEffect>Formularios</a>
           </li>
-          <li class="nav-item " routerLinkActive="paciente" *ngIf="auth.is.medico">
-            <a class="nav-link" routerLink="paciente">Pacientes</a>
+          <li class="nav-item " routerLinkActive="paciente" >
+            <a *ngIf="auth.is.medico" class="nav-link" routerLink="paciente">Pacientes</a>
           </li>
-          <li class="nav-item" routerLinkActive="reportes" *ngIf="auth.is.medico">
-            <a class="nav-link" routerLink="reportes">Reportes</a>
+          <li class="nav-item" routerLinkActive="reportes">
+            <a *ngIf="auth.is.medico" class="nav-link" routerLink="reportes">Reportes</a>
           </li>
       </ul>
       <ul class="nav navbar-nav ml-auto">
